@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Education</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+      
+       
+    <title>Document</title>
+
+    <style>
+  * { 
+   box-sizing: border-box;
+   }
+  .btn {
+    color: #212529;
+    border-color: orangered;
+}
+
+.btn:hover {
+    color: #212529;
+    background-color:orangered;
+    border-color: orangered
+}
+body {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: orangered;
+  color: #fff;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: orangered !important;
+  color: #ffffff;
+}
+    </style>
+</head>
+
+<body>
+<!--HEADER-->
+<!--END OF HEADER-->
+
+<!--SIDE NAVBAR-->
+<!--END OF SIDE NAVBAR-->
+
+<!--FORM-->
+    <form action="">
+        <!--2 columns-->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+        <h4>Current situation</h4>
+        <!--Diploma in progress-->
+            <div class="form-group">
+             <label for="exampleFormControlInput1">Diploma in progress</label>
+             <input placeholder="Diploma in progress">
+           </div>
+        <!--Field of study-->
+           <div class="form-group">
+            <label for="exampleFormControlInput1">Field of study</label>
+            <input placeholder="Field of study">
+           </div>
+           <div class="col">
+        <!--Univeristy name-->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Univeristy name</label>
+            <input placeholder="Univeristy name">
+          </div>
+        <!--Univeristy city-->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Univeristy city</label>
+            <input placeholder="Univeristy city">
+          </div>
+        <!--Univeristy country-->
+                 <div>
+          <label for="exampleFormControlInput1">Country</label>
+          <div class="form-group">
+             <!--Make sure the form has the autocomplete function switched off:-->
+             <form autocomplete="off" action="/action_page.php">
+                <div class="autocomplete" style="width:300px;">
+                    <input id="myInput" type="text" name="myCountry" placeholder="Your country">
+                </div>
+         </div>
+             </form>
+         </div>
+        </div>
+        <div class="row">
+            <div class="col">
+         <h4>Completed degree</h4>
+          <!--Diploma obtained-->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Diploma obtained</label>
+            <input placeholder="Diploma obtained">
+          </div>
+           <!--Grades-->
+           <div class="form-group">
+            <label for="exampleFormControlInput1">Grades</label>
+            <input placeholder="Grades obtained">
+          </div>
+
+       <!--Graduation -->
+         <div class="form-group">
+            <label for="exampleFormControlInput1">Graduation</label>
+            <input  type="date"  placeholder=" Your graduation date">
+         </div>
+        <!--City of birth-->
+        <div class="form-group">
+            <label for="exampleFormControlInput1">City of birth</label>
+            <input placeholder=" Your city of birth">
+           </div>
+        <!--Add diploma - file upload-->
+        <form>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile">Add diploma</label>
+            </div>
+          </form>
+
+          <br>
+        </div>
+      </div>
+      <!--Button Save and Next -->
+       
+       <div class="form-group">
+        <div class="row">
+          <div class="col-md-12">
+        <button type="submit" class="btn btn-outline-primary">Save and Next</button>
+        </div>
+          </div>
+      </div>
+    </form>        
+  </div>
+  <div class="col-md-3"></div>
+</div>
+</div>
+      
+  </form>
+<!--END OF FORM-->
+
+<footer>
+
+</footer>   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="personalinfo-country.js"></script>
+     
+    </body>
+
+</body>
+</html>

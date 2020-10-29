@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Personal Information</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+      
+       
+    <title>Document</title>
+
+    <style>
+ * { 
+   box-sizing: border-box;
+   }
+   .btn {
+    color: #212529;
+    border-color: orangered;
+}
+
+.btn:hover {
+    color: #212529;
+    background-color:orangered;
+    border-color: orangered
+}
+  body {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: orangered;
+  color: #fff;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: orangered !important;
+  color: #ffffff;
+}
+    </style>
+</head>
+
+<body>
+<!--HEADER-->
+<!--END OF HEADER-->
+
+<!--SIDE NAVBAR-->
+<!--END OF SIDE NAVBAR-->
+
+<!--FORM-->
+    <form action="">
+     <!--2 columns - Last name and First name-->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+     <!--Last name-->
+               <div class="form-group">
+              <label for="exampleFormControlInput1">Last name</label>
+              <input placeholder="Your Last name">
+            </div>
+          </div>
+          <div class="col">
+     <!--First name-->
+           <div class="form-group">
+            <label for="exampleFormControlInput1">First name</label>
+            <input placeholder="Your First Name">
+           </div>
+          </div>
+        </div>
+       <!--1 column for the rest of the form-->
+       <div class="row">
+          <div class="col">
+             <!--Address Line 1-->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Adress line 1</label>
+            <input placeholder="Your Adress line 1">
+          </div>
+        <!--Address Line 2-->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Adress line 2</label>
+            <input placeholder="Your Adress line 2">
+          </div>
+        <!--Postal code-->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Postal code</label>
+            <input placeholder="Your Postal code">
+          </div>
+        <!--City-->
+           <div class="form-group">
+            <label for="exampleFormControlInput1">City</label>
+            <input placeholder="Your city">
+           </div>
+         <!--Country-->
+         <div>
+          <label for="exampleFormControlInput1">Country</label>
+          <div class="form-group">
+             <!--Make sure the form has the autocomplete function switched off:-->
+             <form autocomplete="off" action="/action_page.php">
+                <div class="autocomplete" style="width:300px;">
+                    <input id="myInput" type="text" name="myCountry" placeholder="Your country">
+                </div>
+         </div>
+             </form>
+         </div>
+
+        <!--Mobile phone-->
+         <div class="form-group">
+            <label for="exampleFormControlInput1">Mobile phone</label>
+            <input placeholder="Your mobile phone">
+           </div>
+
+           <br>
+           <br>
+
+       <!--Date of birth-->
+         <div class="form-group">
+            <label for="exampleFormControlInput1">Date of birth</label>
+            <input  type="date" id="birthday" name="birthday" placeholder=" Your date of birth">
+         </div>
+        <!--City of birth-->
+        <div class="form-group">
+            <label for="exampleFormControlInput1">City of birth</label>
+            <input placeholder=" Your city of birth">
+           </div>
+        <!--Country of birth-->
+        <div>
+          <label for="exampleFormControlInput1">Country</label>
+          <div class="form-group">
+             <!--Make sure the form has the autocomplete function switched off:-->
+             <form autocomplete="off" action="/action_page.php">
+                <div class="autocomplete" style="width:300px;">
+                    <input id="myInput" type="text" name="myCountry" placeholder="Your country">
+                </div>
+         </div>
+             </form>
+         </div>
+        <br>
+          </div>
+        </div>
+        <!--Button Save and Next -->
+         
+         <div class="form-group">
+          <div class="row">
+            <div class="col-md-12">
+          <button type="submit" class="btn btn-outline-primary">Save and Next</button>
+          </div>
+            </div>
+        </div>
+      </form>        
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+        
+    </form>
+<!--END OF FORM-->
+
+<footer>
+
+</footer>   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="personalinfo-country.js"></script>
+        <!--When I add this file, the autocompletion for country does not work (neither the autocompletion for countrycode). 
+        It is either one or the other that I have to add , not the 2 files at the same time-->
+
+    <!--<script src="personalinfo-countrycode.js"></script>-->
+    </body>
+
+</body>
+</html>
